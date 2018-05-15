@@ -20,9 +20,29 @@
 //     console.log('Keep on keeping on!');
 // }
 
-let isSoccerFan = true;
-if (isSoccerFan === true) {
-    console.log('Rawr');
-} else {
-    console.log('nvm');
-}
+// let isSoccerFan = true;
+// if (isSoccerFan === true) {
+//     console.log('Goal!');
+// } else {
+//     console.log('No goal!');
+// }
+
+// >>>> 3/11
+// let wordCount = 10;
+
+// if (wordCount) {
+//     console.log("Great! You've started your work!");
+// } else {
+//     console.log('Better get to work!');
+// }
+
+
+// let favoritePhrase = 'Oh Dear';
+
+// if (favoritePhrase) {
+//     console.log("This string doesn't seem to be empty.");
+// } else {
+//     console.log('This string is definitely empty.');
+// }
+
+// >>>> 4/11
