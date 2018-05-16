@@ -64,12 +64,21 @@
 // }   
 
 // >>>> 5/11
-let hungerLevel = 5
+// let hungerLevel = 5
 
-if (hungerLevel > 7) {
-    console.log("Time to eat!")
-} else {
-    console.log("We can eat later!")
-}
+// if (hungerLevel > 7) {
+//     console.log("Time to eat!")
+// } else {
+//     console.log("We can eat later!")
+// }
 
 // >>>> 6/11
+var moonPhase = "full"
+
+if (moonPhase === "full") {
+    console.log("Howl!")
+} else {
+    console.log("I swear I am not a werewolf")
+}
+
+// >>>> 7/11
