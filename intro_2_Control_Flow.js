@@ -94,16 +94,36 @@
 //     console.log('Caution, unknown!');
 // }
 
-var moonPhase = "full"
+// var moonPhase = "full"
 
-if (moonPhase === "full") {
-    console.log("Howl!")
-} else if (moonPhase === "mostly full") {
-    console.log("Arms and legs are getting hairier")
-} else if (moonPhase === "mostly new") {
-    console.log("Back on two feet")
-} else {
-    console.log("Invalid moon phase")
-}
+// if (moonPhase === "full") {
+//     console.log("Howl!")
+// } else if (moonPhase === "mostly full") {
+//     console.log("Arms and legs are getting hairier")
+// } else if (moonPhase === "mostly new") {
+//     console.log("Back on two feet")
+// } else {
+//     console.log("Invalid moon phase")
+// }
 
 // >>>> 8/11
+// if (stopLight === 'green' && pedestrians === false) {
+//     console.log('Go!');
+//   } else {
+//     console.log('Stop');
+//   }
+
+// var moonPhase = "full"
+// var isFoggyNight = true
+
+// if (moonPhase === "full" && isFoggyNight === true) {
+//     console.log("Howl!")
+// } else if (moonPhase === "mostly full") {
+//     console.log("Arms and legs are getting hairier")
+// } else if (moonPhase === "mostly new") {
+//     console.log("Back on two feet")
+// } else {
+//     console.log("Invalid moon phase")
+// }
+
+// >>>> 9/11
