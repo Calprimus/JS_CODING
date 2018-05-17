@@ -127,3 +127,41 @@
 // }
 
 // >>>> 9/11
+// let groceryItem = 'papaya';
+
+// switch (groceryItem) {
+//     case 'tomato':
+//         console.log('Tomatoes are $0.49');
+//         break;
+//     case 'lime':
+//         console.log('Limes are $1.49');
+//         break;
+//     case 'papaya':
+//         console.log('Papayas are $1.29');
+//         break;
+//     default:
+//         console.log('Invalid item');
+//         break;
+// }
+
+var moonPhase = "full"
+
+switch (moonPhase) {
+    case 'full':
+        console.log('Howl!');
+        break;
+
+    case 'mostly full':
+        console.log('Arms and legs are getting hairier');
+        break;
+
+    case 'mostly new':
+        console.log('Back on two feet');
+        break;
+
+    default:
+        console.log('Invalid moon Phase');
+        break;
+}
+
+// >>>> 10/11
