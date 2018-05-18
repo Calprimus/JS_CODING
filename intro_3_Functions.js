@@ -66,21 +66,58 @@
 //   console.log(getAverage(365, 27));
 //   // Output: 196
 
-var orderCount = 0
+// var orderCount = 0
+
+// const takeOrder = (topping, crustType) => {
+//     orderCount++
+//     console.log('Order: ' + crustType + ' pizza topped with ' + topping);
+// };
+
+// const getSubTotal = (itemCount) => {
+//     return itemCount * 7.5
+// };
+
+// takeOrder('mushroom', 'thin crust');
+// takeOrder('spinach', 'whole wheat');
+// takeOrder('pepperoni', 'brooklyn style');
+
+// console.log(getSubTotal(orderCount))
+
+// >>>> 6/10
+// const multiplyByNineFifths = (celsius) => {
+//     return celsius * (9/5);
+//   };
+
+//   const getFahrenheit = (celsius) => {
+//     return multiplyByNineFifths(celsius) + 32;
+//   };
+
+//   console.log('The temperature is ' + getFahrenheit(15) + '°F');
+//   // Output: The temperature is 59°F
+
+let orderCount = 0;
 
 const takeOrder = (topping, crustType) => {
-    orderCount++
+    orderCount++;
     console.log('Order: ' + crustType + ' pizza topped with ' + topping);
-};
-
-const getSubTotal = (itemCount) => {
-    return itemCount * 7.5
 };
 
 takeOrder('mushroom', 'thin crust');
 takeOrder('spinach', 'whole wheat');
 takeOrder('pepperoni', 'brooklyn style');
 
-console.log(getSubTotal(orderCount))
+const getSubTotal = (itemCount) => {
+    return itemCount * 7.5;
+};
 
-// >>>> 6/10
+const getTax = (itemCount) => {
+    return getSubTotal(itemCount) * 0.06
+}
+
+const getTotal = (itemCount) => {
+    return getSubTotal(itemCount) + getTax(itemCount)
+}
+
+console.log(getTotal(orderCount));
+
+// >>>> 7/10
