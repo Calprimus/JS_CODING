@@ -95,29 +95,40 @@
 //   console.log('The temperature is ' + getFahrenheit(15) + '°F');
 //   // Output: The temperature is 59°F
 
-let orderCount = 0;
+// let orderCount = 0;
 
-const takeOrder = (topping, crustType) => {
-    orderCount++;
-    console.log('Order: ' + crustType + ' pizza topped with ' + topping);
-};
+// const takeOrder = (topping, crustType) => {
+//     orderCount++;
+//     console.log('Order: ' + crustType + ' pizza topped with ' + topping);
+// };
 
-takeOrder('mushroom', 'thin crust');
-takeOrder('spinach', 'whole wheat');
-takeOrder('pepperoni', 'brooklyn style');
+// takeOrder('mushroom', 'thin crust');
+// takeOrder('spinach', 'whole wheat');
+// takeOrder('pepperoni', 'brooklyn style');
 
-const getSubTotal = (itemCount) => {
-    return itemCount * 7.5;
-};
+// const getSubTotal = (itemCount) => {
+//     return itemCount * 7.5;
+// };
 
-const getTax = (itemCount) => {
-    return getSubTotal(itemCount) * 0.06
-}
+// const getTax = (itemCount) => {
+//     return getSubTotal(itemCount) * 0.06
+// }
 
-const getTotal = (itemCount) => {
-    return getSubTotal(itemCount) + getTax(itemCount)
-}
+// const getTotal = (itemCount) => {
+//     return getSubTotal(itemCount) + getTax(itemCount)
+// }
 
-console.log(getTotal(orderCount));
+// console.log(getTotal(orderCount));
 
 // >>>> 7/10
+function isGreaterThan(numberOne, numberTwo) {
+    if (numberOne > numberTwo) {
+        return true
+    } else {
+        return false
+    }
+}
+
+console.log(isGreaterThan(5, 9))
+
+// >>>> 8/10
