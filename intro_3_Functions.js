@@ -19,10 +19,24 @@
 // // Output: Calculator turning off.
 
 // >>>> 2/10
-const takeOrder = () => {
-    console.log('Order: pizza')
-}
+// const takeOrder = () => {
+//     console.log('Order: pizza')
+// }
 
-takeOrder()
+// takeOrder()
 
 // >>>> 3/10
+// const multiplyByThirteen = (inputNumber) => {
+//     console.log(inputNumber * 13);
+// };
+
+// multiplyByThirteen(9);
+// // Output: 117
+
+const takeOrder = (topping) => {
+    console.log('Order: pizza topped with ' + topping);
+};
+
+takeOrder("mushrooms");
+
+// >>>> 4/10
