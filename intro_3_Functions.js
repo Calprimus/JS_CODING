@@ -121,14 +121,50 @@
 // console.log(getTotal(orderCount));
 
 // >>>> 7/10
-function isGreaterThan(numberOne, numberTwo) {
+// function isGreaterThan(numberOne, numberTwo) {
+//     if (numberOne > numberTwo) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+
+// console.log(isGreaterThan(5, 9))
+
+// >>>> 8/10
+// -------------------------------------------------------
+// const square = function(number) {
+//     return number * number;
+// };
+
+// console.log(square(5));
+// // Output: 25.
+// // -------------------------------------------------------
+// const square = (number) => {
+//     return number * number;
+// };
+
+// console.log(square(5));
+// // Output: 25.
+// // -------------------------------------------------------
+// function isGreaterThan(numberOne, numberTwo) {
+//     if (numberOne > numberTwo) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// isGreaterThan(4, 8)
+
+const isGreaterThan = (numberOne, numberTwo) => {
     if (numberOne > numberTwo) {
-        return true
+        return true;
     } else {
-        return false
+        return false;
     }
 }
 
-console.log(isGreaterThan(5, 9))
+isGreaterThan(4, 8)
 
-// >>>> 8/10
+// >>>> 9/10
