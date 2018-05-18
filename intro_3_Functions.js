@@ -48,13 +48,39 @@
 // getAverage(365, 27);
 // // Output: 196
 
+// const takeOrder = (topping, crustType) => {
+//     console.log('Order: ' + crustType + ' pizza topped with ' + topping);
+// };
+
+
+// takeOrder('mushrooms', 'thin');
+// takeOrder('bacon', 'thick');
+// takeOrder('mozzarella', 'medium');
+
+// >>>> 5/10
+// const getAverage = (numberOne, numberTwo) => {
+//     const average = (numberOne + numberTwo) / 2;
+//     return average;
+//   }
+
+//   console.log(getAverage(365, 27));
+//   // Output: 196
+
+var orderCount = 0
+
 const takeOrder = (topping, crustType) => {
+    orderCount++
     console.log('Order: ' + crustType + ' pizza topped with ' + topping);
 };
 
+const getSubTotal = (itemCount) => {
+    return itemCount * 7.5
+};
 
-takeOrder('mushrooms', 'thin');
-takeOrder('bacon', 'thick');
-takeOrder('mozzarella', 'medium');
+takeOrder('mushroom', 'thin crust');
+takeOrder('spinach', 'whole wheat');
+takeOrder('pepperoni', 'brooklyn style');
 
-// >>>> 5/10
+console.log(getSubTotal(orderCount))
+
+// >>>> 6/10
