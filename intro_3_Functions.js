@@ -33,10 +33,28 @@
 // multiplyByThirteen(9);
 // // Output: 117
 
-const takeOrder = (topping) => {
-    console.log('Order: pizza topped with ' + topping);
-};
+// const takeOrder = (topping) => {
+//     console.log('Order: pizza topped with ' + topping);
+// };
 
-takeOrder("mushrooms");
+// takeOrder("mushrooms");
 
 // >>>> 4/10
+// const getAverage = (numberOne, numberTwo) => {
+//     const average = (numberOne + numberTwo) / 2;
+//     console.log(average);
+// };
+
+// getAverage(365, 27);
+// // Output: 196
+
+const takeOrder = (topping, crustType) => {
+    console.log('Order: ' + crustType + ' pizza topped with ' + topping);
+};
+
+
+takeOrder('mushrooms', 'thin');
+takeOrder('bacon', 'thick');
+takeOrder('mozzarella', 'medium');
+
+// >>>> 5/10
