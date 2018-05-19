@@ -33,12 +33,38 @@
 // console.log(stars)
 
 // >>>> 4/7
+// const visibleLightWaves = () => {
+//     let lightWaves = 'Moonlight'
+//     console.log(lightWaves)
+// }
+
+// visibleLightWaves()
+// console.log(lightWaves)
+
+// >>>> 5/7
+// const colorOfSky = () => {
+//     const dusk = true;
+//     let color = 'blue';
+//     if (dusk) {
+//         let color = 'pink';
+//         console.log(color); // pink
+//     }
+//     console.log(color); // blue 
+// };
+
+// colorOfSky(); // blue
+// console.log(color); // ReferenceError
+
 const visibleLightWaves = () => {
     let lightWaves = 'Moonlight'
+    let region = 'The Arctic'
+    if (region === 'The Arctic') {
+        let lightWaves = 'Northern Lights'
+        console.log(lightWaves)
+    }
     console.log(lightWaves)
 }
 
 visibleLightWaves()
-console.log(lightWaves)
 
-// >>>> 5/7
+// >>>> 6/7
