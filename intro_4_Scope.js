@@ -19,17 +19,26 @@
 // console.log(myNightSky())
 
 // >>>> 3/7
-const satellite = 'The Moon'
-const galaxy = 'The Milky Way'
+// const satellite = 'The Moon'
+// const galaxy = 'The Milky Way'
 
-let stars = 'North Star'
+// let stars = 'North Star'
 
-const myNightSky = () => {
-    stars = 'Sirius';
-    return 'Night Sky: ' + satellite + ', ' + stars + ', ' + galaxy;
-}
+// const myNightSky = () => {
+//     stars = 'Sirius';
+//     return 'Night Sky: ' + satellite + ', ' + stars + ', ' + galaxy;
+// }
 
-console.log(myNightSky())
-console.log(stars)
+// console.log(myNightSky())
+// console.log(stars)
 
 // >>>> 4/7
+const visibleLightWaves = () => {
+    let lightWaves = 'Moonlight'
+    console.log(lightWaves)
+}
+
+visibleLightWaves()
+console.log(lightWaves)
+
+// >>>> 5/7
