@@ -55,16 +55,40 @@
 // colorOfSky(); // blue
 // console.log(color); // ReferenceError
 
-const visibleLightWaves = () => {
-    let lightWaves = 'Moonlight'
-    let region = 'The Arctic'
-    if (region === 'The Arctic') {
-        let lightWaves = 'Northern Lights'
-        console.log(lightWaves)
-    }
-    console.log(lightWaves)
-}
+// const visibleLightWaves = () => {
+//     let lightWaves = 'Moonlight'
+//     let region = 'The Arctic'
+//     if (region === 'The Arctic') {
+//         let lightWaves = 'Northern Lights'
+//         console.log(lightWaves)
+//     }
+//     console.log(lightWaves)
+// }
 
-visibleLightWaves()
+// visibleLightWaves()
 
 // >>>> 6/7
+// const cloudCount = () => {
+//     let i = 2;
+//     console.log(i); // 2
+//     for (let i = 0; i < 10; i++) {
+//         console.log(i); // Numbers from 0 to 9
+//     }
+// };
+
+// cloudCount();
+// console.log(i); // ReferenceError
+// // ----------------------------------------------------------------
+// const starCount = () => {
+//     let i = 5
+//     console.log(i)
+//     for (i=0; i<12; i++){
+//       console.log(i)
+//     }
+//   }
+
+//   starCount()
+//   console.log(i)
+// //   -------------------------------------------------------------
+
+// >>>> 7/7
