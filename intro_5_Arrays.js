@@ -9,7 +9,27 @@
 // console.log(newYearsResolutions)
 
 // >>>> 3/9
+// let newYearsResolutions = ['a', 'b', 'c'];
+
+// console.log(newYearsResolutions)
+// let listItem = newYearsResolutions[0];
+// console.log(listItem);
+// console.log(newYearsResolutions[2]);
+// console.log(newYearsResolutions[3]);
+
+// >>>> 4/9
+// let seasons = ["Winter", "Spring", "Summer", "Fall"];
+
+// seasons[3] = "Autumn";
+// console.log(seasons) 
+// //Output: 
+// //Winter 
+// //Spring
+// //Summer
+// //Autumn
+
 let newYearsResolutions = ['a', 'b', 'c'];
+newYearsResolutions[1] = 'Learn a new language';
 
 console.log(newYearsResolutions)
 let listItem = newYearsResolutions[0];
@@ -17,4 +37,4 @@ console.log(listItem);
 console.log(newYearsResolutions[2]);
 console.log(newYearsResolutions[3]);
 
-// >>>> 4/9
+// >>>> 5/9
