@@ -79,3 +79,17 @@
 // console.log(groceryList);
 
 // >>>> 8/9
+let condiments = ['Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha'];
+
+const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
+
+condiments.push('Mayo');
+console.log(condiments);
+
+condiments = ['a'];
+
+utensils.pop();
+console.log(utensils);
+// utensils = ['b'];
+
+// >>>> 9/9
