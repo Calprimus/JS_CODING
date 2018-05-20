@@ -49,19 +49,33 @@
 // console.log(newYearsResolutions.length);
 
 // >>>> 6/9
-let newYearsResolutions = ['a', 'b', 'c'];
-newYearsResolutions[1] = 'Learn a new language';
+// let newYearsResolutions = ['a', 'b', 'c'];
+// newYearsResolutions[1] = 'Learn a new language';
 
-console.log(newYearsResolutions)
-let listItem = newYearsResolutions[0];
-console.log(listItem);
-console.log(newYearsResolutions[2]);
-console.log(newYearsResolutions[3]);
-console.log(newYearsResolutions.length);
+// console.log(newYearsResolutions)
+// let listItem = newYearsResolutions[0];
+// console.log(listItem);
+// console.log(newYearsResolutions[2]);
+// console.log(newYearsResolutions[3]);
+// console.log(newYearsResolutions.length);
 
-newYearsResolutions.push('d', 'e');
-console.log(newYearsResolutions);
-newYearsResolutions.pop();
-console.log(newYearsResolutions);
+// newYearsResolutions.push('d', 'e');
+// console.log(newYearsResolutions);
+// newYearsResolutions.pop();
+// console.log(newYearsResolutions);
 
 // >>>> 7/9
+// let groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
+
+// // groceryList.shift();
+// // console.log(groceryList);
+
+
+// // groceryList.unshift('popcorn');
+// // console.log(groceryList);
+
+
+// console.log(groceryList.slice(1, 4))
+// console.log(groceryList);
+
+// >>>> 8/9
