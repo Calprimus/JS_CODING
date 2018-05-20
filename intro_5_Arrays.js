@@ -92,4 +92,4 @@ utensils.pop();
 console.log(utensils);
 // utensils = ['b'];
 
-// >>>> 9/9
+// >>>>
