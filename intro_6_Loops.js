@@ -34,14 +34,31 @@
 //     }
 // }
 
-let myPlaces = ['London', 'Paris', 'Rome'];
-let friendPlaces = ['SF', 'Paris', 'Vegas'];
+// let myPlaces = ['London', 'Paris', 'Rome'];
+// let friendPlaces = ['SF', 'Paris', 'Vegas'];
 
-for (let myPlacesIndex = 0; myPlacesIndex < myPlaces.length; myPlacesIndex++) {
+// for (let myPlacesIndex = 0; myPlacesIndex < myPlaces.length; myPlacesIndex++) {
 
-    for (let friendPlacesIndex = 0; friendPlacesIndex < friendPlaces.length; friendPlacesIndex++) {
-        if (myPlaces[myPlacesIndex] === friendPlaces[friendPlacesIndex]) { console.log(myPlaces[myPlacesIndex]) }
-    }
-};
+//     for (let friendPlacesIndex = 0; friendPlacesIndex < friendPlaces.length; friendPlacesIndex++) {
+//         if (myPlaces[myPlacesIndex] === friendPlaces[friendPlacesIndex]) { console.log(myPlaces[myPlacesIndex]) }
+//     }
+// };
 
 // >>>> 6/8
+// while (condition) {
+//     // Code block that loops until condition is false
+//   }
+
+let cards = ['Diamond', 'Spade', 'Heart', 'Club'];
+
+let currentCard = 'Heart';
+
+while (currentCard !== 'Spade') {
+    console.log(currentCard)
+    currentCard = cards[Math.floor(Math.random() * 4)];
+
+}
+
+console.log('found a ' + currentCard);
+
+// >>>> 7/8
