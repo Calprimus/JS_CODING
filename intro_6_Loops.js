@@ -49,16 +49,28 @@
 //     // Code block that loops until condition is false
 //   }
 
-let cards = ['Diamond', 'Spade', 'Heart', 'Club'];
+// let cards = ['Diamond', 'Spade', 'Heart', 'Club'];
 
-let currentCard = 'Heart';
+// let currentCard = 'Heart';
 
-while (currentCard !== 'Spade') {
-    console.log(currentCard)
-    currentCard = cards[Math.floor(Math.random() * 4)];
+// while (currentCard !== 'Spade') {
+//     console.log(currentCard)
+//     currentCard = cards[Math.floor(Math.random() * 4)];
 
-}
+// }
 
-console.log('found a ' + currentCard);
+// console.log('found a ' + currentCard);
 
 // >>>> 7/8
+let flag = true;
+let counter = 0;
+
+while (flag === true) {
+    console.log(counter);
+    counter += 1;
+    if (counter === 37) {
+        break;
+    }
+}
+
+// >>>> 8/8
