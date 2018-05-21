@@ -13,10 +13,18 @@
 // console.log(vacationSpots[2]);
 
 // >>>> 3/8
+// let vacationSpots = ['NYC', 'Napoli', 'Capri'];
+
+// for (let vacationSpotIndex = 0; vacationSpotIndex < vacationSpots.length; vacationSpotIndex++) {
+//     console.log('I would love to visit ' + vacationSpots[vacationSpotIndex])
+// }
+
+// >>>> 4/8
 let vacationSpots = ['NYC', 'Napoli', 'Capri'];
 
-for (let vacationSpotIndex = 0; vacationSpotIndex < vacationSpots.length; vacationSpotIndex++) {
+for (let vacationSpotIndex = vacationSpots.length - 1; vacationSpotIndex >= 0; vacationSpotIndex--) {
+
     console.log('I would love to visit ' + vacationSpots[vacationSpotIndex])
 }
 
-// >>>> 4/8
+// >>>> 5/8
