@@ -20,11 +20,28 @@
 // }
 
 // >>>> 4/8
-let vacationSpots = ['NYC', 'Napoli', 'Capri'];
+// let vacationSpots = ['NYC', 'Napoli', 'Capri'];
 
-for (let vacationSpotIndex = vacationSpots.length - 1; vacationSpotIndex >= 0; vacationSpotIndex--) {
+// for (let vacationSpotIndex = vacationSpots.length - 1; vacationSpotIndex >= 0; vacationSpotIndex--) {
 
-    console.log('I would love to visit ' + vacationSpots[vacationSpotIndex])
-}
+//     console.log('I would love to visit ' + vacationSpots[vacationSpotIndex])
+// }
 
 // >>>> 5/8
+// for (let i = 0; i < myArray.length; i++) {
+//     for (let j = 0; j < yourArray.length; j++) {
+//         //Code To Run
+//     }
+// }
+
+let myPlaces = ['London', 'Paris', 'Rome'];
+let friendPlaces = ['SF', 'Paris', 'Vegas'];
+
+for (let myPlacesIndex = 0; myPlacesIndex < myPlaces.length; myPlacesIndex++) {
+
+    for (let friendPlacesIndex = 0; friendPlacesIndex < friendPlaces.length; friendPlacesIndex++) {
+        if (myPlaces[myPlacesIndex] === friendPlaces[friendPlacesIndex]) { console.log(myPlaces[myPlacesIndex]) }
+    }
+};
+
+// >>>> 6/8
