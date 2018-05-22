@@ -1,4 +1,4 @@
-// >>>> 1/7
+// >>>> 1/7 ----->> .forEach() <<---------
 // let artists = ['Picasso', 'Kahlo', 'Matisse', 'Utamaro'];
 
 // artists.forEach(function(artist) {
@@ -21,7 +21,7 @@
 
 // console.log(onlyNumbers);
 
-// >>>> 2/7
+// >>>> 2/7----->> .forEach() <<---------
 // let groceries = ['whole wheat flour', 'brown sugar', 'salt', 'cranberries', 'walnuts'];
 
 // groceries.forEach(function(groceryItem) {
@@ -50,7 +50,7 @@
 
 // fruits.forEach(fruit => console.log('I want to eat a ' + fruit));
 
-// >>>> 3/7
+// >>>> 3/7----->> .map() <<---------
 // let numbers = [1, 2, 3, 4, 5]; 
 
 // let bigNumbers = numbers.map(function(number) {
@@ -81,7 +81,7 @@
 // let secretMessage = animals.map(animals => animals[0]);
 // console.log(secretMessage.join(''));
 
-// >>>> 4/7
+// >>>> 4/7----->> .filter() <<---------
 // let words = ['chair', 'music', 'pillow', 'brick', 'pen', 'door']; 
 
 // let shortWords = words.filter(function(word) {
@@ -103,7 +103,7 @@
 
 // let longFavoriteWords = favoriteWords.filter(word => word.length > 7);
 
-// >>>> 5/7
+// >>>> 5/7----->> .some() <<---------
 
 // var array = [1, 2, 3, 4, 5];
 
@@ -115,24 +115,41 @@
 // console.log(array.some(even));
 // // expected output: true
 
-let words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
+// let words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
 
-// Something is missing in the method call below
+// // Something is missing in the method call below
 
-console.log(words.some(function(word) {
-    return word.length < 6;
-}));
+// console.log(words.some(function(word) {
+//     return word.length < 6;
+// }));
 
-// Use filter to create a new array
+// // Use filter to create a new array
 
-let interestingWords = words.filter(function(word) {
-    return word.length > 5
-});
+// let interestingWords = words.filter(function(word) {
+//     return word.length > 5
+// });
 
 
 
-// Make sure to uncomment the code below and fix the incorrect code before running it
+// // Make sure to uncomment the code below and fix the incorrect code before running it
 
-console.log(interestingWords.every(word => word.length > 5));
+// console.log(interestingWords.every(word => word.length > 5));
 
 // >>>> 6/7
+let cities = ['Nashville', 'Charlotte', 'Asheville', 'Austin', 'Boulder'];
+
+let nums = [1, 50, 75, 200, 350, 525, 1000];
+
+//  Choose a method that will return undefined
+cities.forEach(city => console.log('Have you visited ' + city + '?'));
+
+// Choose a method that will return a new array
+let longCities = cities.filter(city => city.length > 7);
+
+// Choose a method that will return a new array
+let smallerNums = nums.map(num => num - 5);
+
+// Choose a method that will return a boolean value
+nums.some(num => num < 0);
+
+// >>>> 7/7
