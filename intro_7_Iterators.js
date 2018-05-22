@@ -90,17 +90,49 @@
 
 // let shortWords = words.filter(word => word.length < 6);
 
-let randomNumbers = [375, 200, 3.14, 7, 13, 852];
+// let randomNumbers = [375, 200, 3.14, 7, 13, 852];
 
-// Call .filter() on randomNumbers below
+// // Call .filter() on randomNumbers below
 
-let smallNumbers = randomNumbers.filter(function(number) {
-    return number < 250;
-})
+// let smallNumbers = randomNumbers.filter(function(number) {
+//     return number < 250;
+// })
 
 
-let favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+// let favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
 
-let longFavoriteWords = favoriteWords.filter(word => word.length > 7);
+// let longFavoriteWords = favoriteWords.filter(word => word.length > 7);
 
 // >>>> 5/7
+
+// var array = [1, 2, 3, 4, 5];
+
+// var even = function(element) {
+//   // checks whether an element is even
+//   return element % 2 === 0;
+// };
+
+// console.log(array.some(even));
+// // expected output: true
+
+let words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
+
+// Something is missing in the method call below
+
+console.log(words.some(function(word) {
+    return word.length < 6;
+}));
+
+// Use filter to create a new array
+
+let interestingWords = words.filter(function(word) {
+    return word.length > 5
+});
+
+
+
+// Make sure to uncomment the code below and fix the incorrect code before running it
+
+console.log(interestingWords.every(word => word.length > 5));
+
+// >>>> 6/7
