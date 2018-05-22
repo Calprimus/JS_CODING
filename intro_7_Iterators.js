@@ -82,3 +82,25 @@
 // console.log(secretMessage.join(''));
 
 // >>>> 4/7
+// let words = ['chair', 'music', 'pillow', 'brick', 'pen', 'door']; 
+
+// let shortWords = words.filter(function(word) {
+//   return word.length < 6;
+// });
+
+// let shortWords = words.filter(word => word.length < 6);
+
+let randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+// Call .filter() on randomNumbers below
+
+let smallNumbers = randomNumbers.filter(function(number) {
+    return number < 250;
+})
+
+
+let favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+let longFavoriteWords = favoriteWords.filter(word => word.length > 7);
+
+// >>>> 5/7
