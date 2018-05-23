@@ -81,6 +81,25 @@
 // It's not possible to use variables like this with dot notation.
 // -----------------------------------------------------------------
 
+// let alarm;
+// let day = 'Wed';
+
+// let person = {
+//     name: 'Fulvio',
+//     age: 53,
+//     weekendAlarm: 'No alarms needed',
+//     weekAlarm: 'Alarm set to 7AM'
+// };
+
+// if (day === 'Saturday' || day === 'Sunday') {
+//     alarm = 'weekendAlarm';
+// } else {
+//     alarm = 'weekAlarm';
+// }
+
+// console.log(person[alarm])
+
+// >>>> 6/15
 let alarm;
 let day = 'Wed';
 
@@ -91,6 +110,8 @@ let person = {
     weekAlarm: 'Alarm set to 7AM'
 };
 
+person.hobbies = ['coding', 'gaming']
+
 if (day === 'Saturday' || day === 'Sunday') {
     alarm = 'weekendAlarm';
 } else {
@@ -98,5 +119,6 @@ if (day === 'Saturday' || day === 'Sunday') {
 }
 
 console.log(person[alarm])
+console.log(person.hobbies)
 
-// >>>> 6/15
+// >>>> 7/15
