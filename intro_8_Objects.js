@@ -122,6 +122,47 @@
 // console.log(person.hobbies)
 
 // >>>> 7/15
+// let alarm;
+// let day = 'Wed';
+
+// let person = {
+//     name: 'Fulvio',
+//     age: 53,
+//     weekendAlarm: 'No alarms needed',
+//     weekAlarm: 'Alarm set to 7AM'
+// };
+
+// person.hobbies = ['coding', 'gaming']
+// person.hobbies = ['gym', ]
+
+// if (day === 'Saturday' || day === 'Sunday') {
+//     alarm = 'weekendAlarm';
+// } else {
+//     alarm = 'weekAlarm';
+// }
+
+// console.log(person[alarm])
+// console.log(person.hobbies)
+
+// >>>> 8/15
+// const restaurant = {
+//     name: 'Italian Bistro',
+//     seatingCapacity: 120,
+//     hasDineInSpecial: true,
+//     entrees: ['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine pesto'],
+//     openRestaurant: () => {
+//         return 'Unlock the door, flip the open sign. We are open for business!';
+//     },
+//     closeRestaurant: () => {
+//         return 'Lock the door, flip the open sign. We are closed.'
+//     }
+// };
+
+// console.log(restaurant.openRestaurant());
+
+// console.log(restaurant.closeRestaurant());
+// ---------------------------------------------------------------------------------
+
 let alarm;
 let day = 'Wed';
 
@@ -129,8 +170,12 @@ let person = {
     name: 'Fulvio',
     age: 53,
     weekendAlarm: 'No alarms needed',
-    weekAlarm: 'Alarm set to 7AM'
+    weekAlarm: 'Alarm set to 7AM',
+    sayHello: () => {
+        return 'Hello, there!'
+    }
 };
+
 
 person.hobbies = ['coding', 'gaming']
 person.hobbies = ['gym', ]
@@ -143,5 +188,6 @@ if (day === 'Saturday' || day === 'Sunday') {
 
 console.log(person[alarm])
 console.log(person.hobbies)
+console.log(person.sayHello())
 
-// >>>> 8/15
+// >>>> 9/15
