@@ -7,3 +7,16 @@
 // Create object getter and setter methods
 
 // >>>> 2/15
+let restaurant = {
+    name: 'Italian Bistro',
+    seatingCapacity: 120,
+    hasDineInSpecial: true,
+    entrees: ['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine Pesto']
+};
+
+let person = {
+    name: 'Fulvio',
+    age: 53
+};
+
+// >>>> 3/15
