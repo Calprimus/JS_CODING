@@ -20,6 +20,24 @@
 // };
 
 // >>>> 3/15
+// let restaurant = {
+//     name: 'Italian Bistro',
+//     seatingCapacity: 120,
+//     hasDineInSpecial: true,
+//     entrees: ['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine pesto']
+// };
+
+// console.log(restaurant.entrees);
+
+// let person = {
+//     name: 'Fulvio',
+//     age: 53
+// };
+
+// console.log(person.name)
+// console.log(person.age)
+
+//   >>>> 4/15
 let restaurant = {
     name: 'Italian Bistro',
     seatingCapacity: 120,
@@ -27,14 +45,14 @@ let restaurant = {
     entrees: ['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine pesto']
 };
 
-console.log(restaurant.entrees);
+console.log(restaurant['entrees']);
 
 let person = {
     name: 'Fulvio',
     age: 53
 };
 
-console.log(person.name)
-console.log(person.age)
+console.log(person['name'])
+console.log(person['age'])
 
-//   >>>> 4/15
+// >>>> 5/15
