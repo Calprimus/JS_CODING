@@ -38,21 +38,65 @@
 // console.log(person.age)
 
 //   >>>> 4/15
-let restaurant = {
-    name: 'Italian Bistro',
-    seatingCapacity: 120,
-    hasDineInSpecial: true,
-    entrees: ['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine pesto']
-};
+// let restaurant = {
+//     name: 'Italian Bistro',
+//     seatingCapacity: 120,
+//     hasDineInSpecial: true,
+//     entrees: ['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine pesto']
+// };
 
-console.log(restaurant['entrees']);
+// console.log(restaurant['entrees']);
+
+// let person = {
+//     name: 'Fulvio',
+//     age: 53
+// };
+
+// console.log(person['name'])
+// console.log(person['age'])
+
+// // >>>> 5/15
+// let meal = 'none';
+// let time = 12;
+// // We'll use military time for this example, counting hours 0-23.
+
+// const restaurantSpecials = {
+//  breakfast: 'The breakfast special is 20% off freshly squeezed orange juice',
+//  lunch: 'The lunch special is 10% off appetizers',
+//  none: 'There are no specials currently'
+// };
+
+// if (time < 11) { // 11 am
+//   meal = 'breakfast';
+// } else if (time < 17) { // 5 pm
+//   meal = 'lunch';
+// }
+
+// console.log(restaurantSpecials[meal]);
+// -----------------------------------------------------------------
+// Bracket notation is required 
+// to use variables to look up keys 
+// within an object. 
+
+// It's not possible to use variables like this with dot notation.
+// -----------------------------------------------------------------
+
+let alarm;
+let day = 'Wed';
 
 let person = {
     name: 'Fulvio',
-    age: 53
+    age: 53,
+    weekendAlarm: 'No alarms needed',
+    weekAlarm: 'Alarm set to 7AM'
 };
 
-console.log(person['name'])
-console.log(person['age'])
+if (day === 'Saturday' || day === 'Sunday') {
+    alarm = 'weekendAlarm';
+} else {
+    alarm = 'weekAlarm';
+}
 
-// >>>> 5/15
+console.log(person[alarm])
+
+// >>>> 6/15
