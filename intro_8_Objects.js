@@ -163,31 +163,31 @@
 // console.log(restaurant.closeRestaurant());
 // ---------------------------------------------------------------------------------
 
-let alarm;
-let day = 'Wed';
+// let alarm;
+// let day = 'Wed';
 
-let person = {
-    name: 'Fulvio',
-    age: 53,
-    weekendAlarm: 'No alarms needed',
-    weekAlarm: 'Alarm set to 7AM',
-    sayHello: () => {
-        return 'Hello, there!'
-    }
-};
+// let person = {
+//     name: 'Fulvio',
+//     age: 53,
+//     weekendAlarm: 'No alarms needed',
+//     weekAlarm: 'Alarm set to 7AM',
+//     sayHello: () => {
+//         return 'Hello, there!'
+//     }
+// };
 
 
-person.hobbies = ['coding', 'gaming']
-person.hobbies = ['gym', ]
+// person.hobbies = ['coding', 'gaming']
+// person.hobbies = ['gym', ]
 
-if (day === 'Saturday' || day === 'Sunday') {
-    alarm = 'weekendAlarm';
-} else {
-    alarm = 'weekAlarm';
-}
+// if (day === 'Saturday' || day === 'Sunday') {
+//     alarm = 'weekendAlarm';
+// } else {
+//     alarm = 'weekAlarm';
+// }
 
-console.log(person[alarm])
-console.log(person.hobbies)
-console.log(person.sayHello())
+// console.log(person[alarm])
+// console.log(person.hobbies)
+// console.log(person.sayHello())
 
 // >>>> 9/15
