@@ -354,17 +354,37 @@
 //     }
 // }
 
-let person = {
-    _name: 'Lu Xun',
-    _age: 137,
+// let person = {
+//     _name: 'Lu Xun',
+//     _age: 137,
 
-    set age(val) {
-        if (typeof val === 'number') {
-            this._age = val;
-        } else {
-            return 'Invalid input'
-        }
-    }
-};
+//     set age(val) {
+//         if (typeof val === 'number') {
+//             this._age = val;
+//         } else {
+//             return 'Invalid input'
+//         }
+//     }
+// };
 
 // >>>> 13/15
+// let restaurant = {
+//     _name: 'Italian Bistro',
+//     _seatingCapacity: 120,
+//     _hasDineInSpecial: true,
+//     _entrees: ['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine pesto'],
+
+//     set seatingCapacity(newCapacity) {
+//         if (typeof newCapacity === 'number') {
+//             this._seatingCapacity = newCapacity;
+//             console.log(`${newCapacity} is valid input.`);
+//         } else {
+//             console.log(`Change ${newCapacity} to a number.`);
+//         }
+//     }
+// }
+
+// // Sets the _seatingCapacity value to 150
+// restaurant.seatingCapacity = 150; //150 is valid input.
+
+// >>>> 14/15
