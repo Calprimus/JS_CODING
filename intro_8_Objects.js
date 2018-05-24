@@ -296,37 +296,75 @@
 //   yourObj.sayHello = myObj.sayHello;
 //   // Sets the sayHello method on yourObj to be the sayHello method on yourObj
 
-let alarm;
-let day = 'Wed';
+// let alarm;
+// let day = 'Wed';
+
+// let person = {
+//     name: 'Fulvio',
+//     age: 53,
+//     weekendAlarm: 'No alarms needed',
+//     weekAlarm: 'Alarm set to 7AM',
+//     sayHello() {
+//         return `Hello, my name is ${this.name}`
+//     },
+//     sayGoodbye() {
+//         return 'Goodbye!'
+//     }
+// };
+
+// let friend = { name: 'Giulio' };
+// friend.sayHello = person.sayHello;
+
+// person.hobbies = ['coding', 'gaming']
+// person.hobbies = ['gym', ]
+
+// if (day === 'Saturday' || day === 'Sunday') {
+//     alarm = 'weekendAlarm';
+// } else {
+//     alarm = 'weekAlarm';
+// }
+
+// console.log(person[alarm])
+// console.log(person.hobbies)
+// console.log(person.sayHello())
+// console.log(friend.sayHello())
+
+// >>>> 12/15
+// let restaurant = {
+//     name: 'Italian Bistro',
+//     seatingCapacity: 120,
+//     hasDineInSpecial: true,
+//     entrees: ['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine Pesto']
+// }
+
+
+// let restaurant = {
+//     _name: 'Italian Bistro',
+//     _seatingCapacity: 120,
+//     _hasDineInSpecial: true,
+//     _entrees: ['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine pesto'],
+
+//     set seatingCapacity(newCapacity) {
+//         if (typeof newCapacity === 'number') {
+//             this._seatingCapacity = newCapacity;
+//             console.log(`${newCapacity} is valid input.`);
+//         } else {
+//             console.log(`Change ${newCapacity} to a number.`)
+//         }
+//     }
+// }
 
 let person = {
-    name: 'Fulvio',
-    age: 53,
-    weekendAlarm: 'No alarms needed',
-    weekAlarm: 'Alarm set to 7AM',
-    sayHello() {
-        return `Hello, my name is ${this.name}`
-    },
-    sayGoodbye() {
-        return 'Goodbye!'
+    _name: 'Lu Xun',
+    _age: 137,
+
+    set age(val) {
+        if (typeof val === 'number') {
+            this._age = val;
+        } else {
+            return 'Invalid input'
+        }
     }
 };
 
-let friend = { name: 'Giulio' };
-friend.sayHello = person.sayHello;
-
-person.hobbies = ['coding', 'gaming']
-person.hobbies = ['gym', ]
-
-if (day === 'Saturday' || day === 'Sunday') {
-    alarm = 'weekendAlarm';
-} else {
-    alarm = 'weekAlarm';
-}
-
-console.log(person[alarm])
-console.log(person.hobbies)
-console.log(person.sayHello())
-console.log(friend.sayHello())
-
-// >>>> 12/15
+// >>>> 13/15
