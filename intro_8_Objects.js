@@ -205,6 +205,52 @@
 //     }
 // }
 
+// let alarm;
+// let day = 'Wed';
+
+// let person = {
+//     name: 'Fulvio',
+//     age: 53,
+//     weekendAlarm: 'No alarms needed',
+//     weekAlarm: 'Alarm set to 7AM',
+//     sayHello: () => {
+//         return 'Hello, there!'
+//     },
+//     sayGoodbye() {
+//         return 'Goodbye!'
+//     }
+// };
+
+
+// person.hobbies = ['coding', 'gaming']
+// person.hobbies = ['gym', ]
+
+// if (day === 'Saturday' || day === 'Sunday') {
+//     alarm = 'weekendAlarm';
+// } else {
+//     alarm = 'weekAlarm';
+// }
+
+// console.log(person[alarm])
+// console.log(person.hobbies)
+
+// >>>> 10/15
+// const restaurant = {
+//     name: 'Italian Bistro',
+//     seatingCapacity: 120,
+//     hasDineInSpecial: true,
+//     entrees: ['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine pesto'],
+//     openRestaurant: function() {
+//         if (this.hasDineInSpecial) {
+//             return 'Unlock the door, post the special on the board, then flip the open sign.'
+//         } else {
+//             return 'Unlock the door, then flip the open sign.'
+//         }
+//     }
+// }
+
+// console.log(restaurant.openRestaurant());
+
 let alarm;
 let day = 'Wed';
 
@@ -213,8 +259,8 @@ let person = {
     age: 53,
     weekendAlarm: 'No alarms needed',
     weekAlarm: 'Alarm set to 7AM',
-    sayHello: () => {
-        return 'Hello, there!'
+    sayHello() {
+        return 'Hello, my name is ' + this.name
     },
     sayGoodbye() {
         return 'Goodbye!'
@@ -233,5 +279,6 @@ if (day === 'Saturday' || day === 'Sunday') {
 
 console.log(person[alarm])
 console.log(person.hobbies)
+console.log(person.sayHello())
 
-// >>>> 10/15
+// >>>> 11/15
