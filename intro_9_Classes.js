@@ -42,12 +42,31 @@
 // console.log(halley.behavior); // Print behavior value to console
 
 // >>>> 2/12
+// class Dog {
+//     constructor(name) {
+//         this.name = name;
+//         this.behavior = 0;
+//     }
+// }
+
+// class Surgeon {
+//     constructor(name, department) {
+//         this.name = name;
+//         this.department = department;
+//     }
+// }
+
+// >>>> 3/12
 class Dog {
     constructor(name) {
         this.name = name;
         this.behavior = 0;
     }
 }
+
+const halley = new Dog('Halley'); // Create new Dog instance
+console.log(halley.name); // Log the name value saved to halley
+// Output: 'Halley'
 
 class Surgeon {
     constructor(name, department) {
@@ -56,4 +75,7 @@ class Surgeon {
     }
 }
 
-// >>>> 3/12
+const surgeonCurry = new Surgeon('Curry', 'Cardiovascular');
+const surgeonDurant = new Surgeon('Durant', 'Orthopedics');
+
+// >>>> 4/12
