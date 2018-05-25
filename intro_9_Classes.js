@@ -57,25 +57,64 @@
 // }
 
 // >>>> 3/12
-class Dog {
-    constructor(name) {
-        this.name = name;
-        this.behavior = 0;
-    }
-}
+// class Dog {
+//     constructor(name) {
+//         this.name = name;
+//         this.behavior = 0;
+//     }
+// }
 
-const halley = new Dog('Halley'); // Create new Dog instance
-console.log(halley.name); // Log the name value saved to halley
-// Output: 'Halley'
+// const halley = new Dog('Halley'); // Create new Dog instance
+// console.log(halley.name); // Log the name value saved to halley
+// // Output: 'Halley'
+
+// class Surgeon {
+//     constructor(name, department) {
+//         this.name = name;
+//         this.department = department;
+//     }
+// }
+
+// const surgeonCurry = new Surgeon('Curry', 'Cardiovascular');
+// const surgeonDurant = new Surgeon('Durant', 'Orthopedics');
+
+// >>>> 4/12
+// class Dog {
+//     constructor(name) {
+//         this._name = name;
+//         this._behavior = 0;
+//     }
+
+//     get name() {
+//         return this._name;
+//     }
+
+//     get behavior() {
+//         return this._behavior;
+//     }
+
+//     incrementBehavior() {
+//         this._behavior++;
+//     }
+// }
 
 class Surgeon {
     constructor(name, department) {
-        this.name = name;
-        this.department = department;
+        this._name = name;
+        this._department = department;
+        this._remainingVacationDays = 20;
+    }
+
+    get name() {
+        return this._name;
+    }
+
+    get department() {
+        return this._department;
     }
 }
 
 const surgeonCurry = new Surgeon('Curry', 'Cardiovascular');
 const surgeonDurant = new Surgeon('Durant', 'Orthopedics');
 
-// >>>> 4/12
+// >>>> 5/12
