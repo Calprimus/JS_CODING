@@ -153,35 +153,81 @@
 // console.log(nikko.behavior); // Logs 1 to the console
 // console.log(bradford.behavior); // Logs 0 to the console
 
-class Surgeon {
-    constructor(name, department) {
+// class Surgeon {
+//     constructor(name, department) {
+//         this._name = name;
+//         this._department = department;
+//         this._remainingVacationDays = 20;
+//     }
+
+//     get name() {
+//         return this._name;
+//     }
+
+//     get department() {
+//         return this._department;
+//     }
+
+//     get remainingVacationDays() {
+//         return this._remainingVacationDays;
+//     }
+
+//     takeVacationDays(daysOff) {
+//         return this._remainingVacationDays = this._remainingVacationDays - daysOff;
+//     }
+// }
+
+// const surgeonCurry = new Surgeon('Curry', 'Cardiovascular');
+// const surgeonDurant = new Surgeon('Durant', 'Orthopedics');
+
+// console.log(surgeonCurry.name)
+// surgeonCurry.takeVacationDays(3)
+// console.log(surgeonCurry.remainingVacationDays)
+
+// >>>> 6/12
+// ----------------------------------------------
+class Cat {
+    constructor(name, usesLitter) {
         this._name = name;
-        this._department = department;
-        this._remainingVacationDays = 20;
+        this._usesLitter = usesLitter;
+        this._behavior = 0;
     }
 
     get name() {
         return this._name;
     }
 
-    get department() {
-        return this._department;
+    get usesLitter() {
+        return this._usesLitter;
     }
 
-    get remainingVacationDays() {
-        return this._remainingVacationDays;
+    get behavior() {
+        return this._behavior;
     }
 
-    takeVacationDays(daysOff) {
-        return this._remainingVacationDays = this._remainingVacationDays - daysOff;
+    incrementBehavior() {
+        this._behavior++;
     }
 }
+// -----------------------------------------------
+class Animal {
+    constructor(name) {
+        this._name = name;
+        this._behavior = 0;
+    }
 
-const surgeonCurry = new Surgeon('Curry', 'Cardiovascular');
-const surgeonDurant = new Surgeon('Durant', 'Orthopedics');
+    get name() {
+        return this._name;
+    }
 
-console.log(surgeonCurry.name)
-surgeonCurry.takeVacationDays(3)
-console.log(surgeonCurry.remainingVacationDays)
+    get behavior() {
+        return this._behavior;
+    }
 
-// >>>> 6/12
+    incrementBehavior() {
+        this._behavior++;
+    }
+}
+//   -----------------------------------------------
+
+// >>>> 7/12
