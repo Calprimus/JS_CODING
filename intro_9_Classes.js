@@ -276,6 +276,15 @@
 
 //   ------------------------------
 
+class Cat extends Animal {
+    constructor(name, usesLitter) {
+        super(name);
+        this._usesLitter = usesLitter;
+    }
+}
+
+// --------------------------------
+
 class HospitalEmployee {
     constructor(name) {
         this._name = name;
@@ -295,3 +304,14 @@ class HospitalEmployee {
     }
 
 }
+
+class Nurse extends HospitalEmployee {
+    constructor(name, certifications) {
+        super(name);
+        this._certifications = certifications;
+    }
+}
+
+const nurseOlynyk = new Nurse('Olynyk', ['Trauma', 'Pediatrics'])
+
+// >>>> 9/12
