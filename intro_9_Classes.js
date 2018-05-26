@@ -349,46 +349,92 @@
 
 // >>>> 10/12
 
-class HospitalEmployee {
-    constructor(name) {
-        this._name = name;
-        this._remainingVacationDays = 20;
-    }
+// class HospitalEmployee {
+//     constructor(name) {
+//         this._name = name;
+//         this._remainingVacationDays = 20;
+//     }
 
-    get name() {
-        return this._name;
-    }
+//     get name() {
+//         return this._name;
+//     }
 
-    get remainingVacationDays() {
-        return this._remainingVacationDays;
-    }
+//     get remainingVacationDays() {
+//         return this._remainingVacationDays;
+//     }
 
-    takeVacationDays(daysOff) {
-        this._remainingVacationDays -= daysOff;
-    }
-}
+//     takeVacationDays(daysOff) {
+//         this._remainingVacationDays -= daysOff;
+//     }
+// }
 
-class Nurse extends HospitalEmployee {
-    constructor(name, certifications) {
-        super(name);
-        this._certifications = certifications;
-    }
+// class Nurse extends HospitalEmployee {
+//     constructor(name, certifications) {
+//         super(name);
+//         this._certifications = certifications;
+//     }
 
-    get certifications() {
-        return this._certifications;
-    }
+//     get certifications() {
+//         return this._certifications;
+//     }
 
-    addCertification(newCertification) {
-        this.certifications.push(newCertification)
-    }
+//     addCertification(newCertification) {
+//         this.certifications.push(newCertification)
+//     }
 
-}
+// }
 
-const nurseOlynyk = new Nurse('Olynyk', ['Trauma', 'Pediatrics']);
-nurseOlynyk.takeVacationDays(5);
-console.log(nurseOlynyk.remainingVacationDays);
+// const nurseOlynyk = new Nurse('Olynyk', ['Trauma', 'Pediatrics']);
+// nurseOlynyk.takeVacationDays(5);
+// console.log(nurseOlynyk.remainingVacationDays);
 
-nurseOlynyk.addCertification('Genetics');
-console.log(nurseOlynyk.certifications);
+// nurseOlynyk.addCertification('Genetics');
+// console.log(nurseOlynyk.certifications);
 
 // >>>> 11/12
+// class HospitalEmployee {
+//     constructor(name) {
+//         this._name = name;
+//         this._remainingVacationDays = 20;
+//     }
+
+//     get name() {
+//         return this._name;
+//     }
+
+//     get remainingVacationDays() {
+//         return this._remainingVacationDays;
+//     }
+
+//     takeVacationDays(daysOff) {
+//         this._remainingVacationDays -= daysOff;
+//     }
+
+//     static generatePassword() {
+//         const randomNumber = Math.floor(Math.random() * 10000);
+//         return randomNumber;
+//     }
+// }
+
+// class Nurse extends HospitalEmployee {
+//     constructor(name, certifications) {
+//         super(name);
+//         this._certifications = certifications;
+//     }
+
+//     get certifications() {
+//         return this._certifications;
+//     }
+
+//     addCertification(newCertification) {
+//         this.certifications.push(newCertification);
+//     }
+// }
+
+// const nurseOlynyk = new Nurse('Olynyk', ['Trauma', 'Pediatrics']);
+// nurseOlynyk.takeVacationDays(5);
+// console.log(nurseOlynyk.remainingVacationDays);
+// nurseOlynyk.addCertification('Genetics');
+// console.log(nurseOlynyk.certifications);
+
+// >>>> 12/12
