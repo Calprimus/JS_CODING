@@ -30,3 +30,23 @@ var sauce = "Eggs and cheese"; // ES6 syntax
 var carbonara = 'You can make carbonara with' + pasta + meat + 'and a sauce made with' + sauce
 
 // >>>> 5/11
+// In the terminal window type:
+
+// npm install babel-cli
+// This installs one of the two required Babel packages.
+
+// 2.
+// In the terminal window type:
+
+// npm install babel-preset-env
+// This installs the second of two required Babel packages.
+
+// 3.
+// In the terminal, type:
+//  npm run build and press enter.
+
+// You can view the ES5 code in ./lib/main.js.
+
+// You may need to refresh to see the newly created lib directory.
+
+// >>>> 6/11
