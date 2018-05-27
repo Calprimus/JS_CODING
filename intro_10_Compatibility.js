@@ -11,3 +11,12 @@
 // >>>> 2/11
 // nothing
 // caniuse.com
+
+// >>>> 3/11
+// // Set the variable below to a number
+// let esFivePercentageSupport = 97;
+
+// // Set the variable below to a number
+// let esSixTemplateLiterals = 88;
+
+// >>>> 4/11
