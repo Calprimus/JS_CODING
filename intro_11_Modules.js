@@ -13,3 +13,22 @@
 //       we load into a program.
 
 // >>>> 2/15
+// ------------>In menu.js we write:
+
+let Menu = {};
+Menu.specialty = "Roasted Beet Burger with Mint Sauce";
+
+module.exports = Menu;
+// ------------>
+// The pattern we use to export modules is thus:
+
+// 1. Define an object to represent the module.
+// 2. Add data or behavior to the module.
+// 3. Export the module.
+
+// --------> In 1-airplane.js
+let Airplane = {};
+Airplane.myAirplane = "StarJet";
+module.exports = Airplane;
+
+// >>>> 3/15
