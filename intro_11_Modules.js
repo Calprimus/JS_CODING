@@ -32,3 +32,27 @@
 // module.exports = Airplane;
 
 // >>>> 3/15
+// ------->In order.js we would write:
+
+const Menu = require('./menu.js');
+
+function placeOrder() {
+    console.log('My order is: ' + Menu.specialty);
+}
+
+placeOrder();
+
+// the pattern to import a module is:
+
+// 1. Import the module
+// 2. Use the module and its properties within a program.
+
+const Airplane = require('./1-airplane.js');
+
+function displayAirplane() {
+    console.log(Airplane.myAirplane);
+}
+
+displayAirplane();
+
+// >>>> 4/15
