@@ -34,25 +34,45 @@
 // >>>> 3/15
 // ------->In order.js we would write:
 
-const Menu = require('./menu.js');
+// const Menu = require('./menu.js');
 
-function placeOrder() {
-    console.log('My order is: ' + Menu.specialty);
-}
+// function placeOrder() {
+//     console.log('My order is: ' + Menu.specialty);
+// }
 
-placeOrder();
+// placeOrder();
 
 // the pattern to import a module is:
 
 // 1. Import the module
 // 2. Use the module and its properties within a program.
 
-const Airplane = require('./1-airplane.js');
+// const Airplane = require('./1-airplane.js');
 
-function displayAirplane() {
-    console.log(Airplane.myAirplane);
-}
+// function displayAirplane() {
+//     console.log(Airplane.myAirplane);
+// }
 
-displayAirplane();
+// displayAirplane();
 
 // >>>> 4/15
+// ----------->  2-airplane.js 
+const Airplane = {};
+
+module.exports = {
+    myAirplane: "CloudJet",
+    displayAirplane: function() {
+        return this.myAirplane;
+    }
+};
+// ----------ES6 Module-------------
+// export const myAirplane = "CloudJet";
+// export function displayAirplane() {
+//     return this.myAirplane;
+// }
+// ---------------------------------
+
+// ----------->2-missionControl.js
+import Airplane from "./2-airplane.js";
+
+console.log(Airplane.displayAirplane());
