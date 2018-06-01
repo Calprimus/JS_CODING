@@ -57,22 +57,44 @@
 
 // >>>> 4/15
 // ----------->  2-airplane.js 
-const Airplane = {};
+// const Airplane = {};
 
-module.exports = {
-    myAirplane: "CloudJet",
-    displayAirplane: function() {
-        return this.myAirplane;
+// module.exports = {
+//     myAirplane: "CloudJet",
+//     displayAirplane: function() {
+//         return this.myAirplane;
+//     }
+// };
+// // ----------ES6 Module-------------
+// // export const myAirplane = "CloudJet";
+// // export function displayAirplane() {
+// //     return this.myAirplane;
+// // }
+// // ---------------------------------
+
+// // ----------->2-missionControl.js
+// import Airplane from "./2-airplane.js";
+
+// console.log(Airplane.displayAirplane());
+
+// //>>>> 5/15
+// // ------------>export default<--------------
+// let Menu = {};
+
+// export default Menu;
+
+let Airplane = {};
+
+export default Airplane;
+
+Airplane.availableAirplanes = [{
+        name: 'AeroJet',
+        fuelCapacity: 800
+    },
+    {
+        name: 'SkyJet',
+        fuelCapacity: 500
     }
-};
-// ----------ES6 Module-------------
-// export const myAirplane = "CloudJet";
-// export function displayAirplane() {
-//     return this.myAirplane;
-// }
-// ---------------------------------
+];
 
-// ----------->2-missionControl.js
-import Airplane from "./2-airplane.js";
-
-console.log(Airplane.displayAirplane());
+// >>>> 6/15
