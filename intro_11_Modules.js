@@ -85,7 +85,7 @@
 
 let Airplane = {};
 
-export default Airplane;
+// export default Airplane;
 
 Airplane.availableAirplanes = [{
         name: 'AeroJet',
@@ -97,4 +97,13 @@ Airplane.availableAirplanes = [{
     }
 ];
 
+
 // >>>> 6/15
+function displayFuelCapacity() {
+    Airplane.availableAirplanes.forEach(function(element) {
+        console.log('Fuel Capacity of ' + element.name + ': ' + element.fuelCapacity)
+    });
+
+};
+
+displayFuelCapacity();
