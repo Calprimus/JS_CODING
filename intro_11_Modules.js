@@ -83,27 +83,64 @@
 
 // export default Menu;
 
-let Airplane = {};
+// let Airplane = {};
 
-// export default Airplane;
+// // export default Airplane;
 
-Airplane.availableAirplanes = [{
-        name: 'AeroJet',
-        fuelCapacity: 800
-    },
-    {
-        name: 'SkyJet',
-        fuelCapacity: 500
-    }
-];
+// Airplane.availableAirplanes = [{
+//         name: 'AeroJet',
+//         fuelCapacity: 800
+//     },
+//     {
+//         name: 'SkyJet',
+//         fuelCapacity: 500
+//     }
+// ];
 
 
 // >>>> 6/15
-function displayFuelCapacity() {
-    Airplane.availableAirplanes.forEach(function(element) {
-        console.log('Fuel Capacity of ' + element.name + ': ' + element.fuelCapacity)
-    });
+// function displayFuelCapacity() {
+//     Airplane.availableAirplanes.forEach(function(element) {
+//         console.log('Fuel Capacity of ' + element.name + ': ' + element.fuelCapacity)
+//     });
 
-};
+// };
 
-displayFuelCapacity();
+// displayFuelCapacity();
+
+// >>>> 7/15
+// let specialty = '';
+// function isVegetarian() {
+// }; 
+// function isLowSodium() {
+// }; 
+
+// export { specialty, isVegetarian };
+
+// let availableAirplanes = [{
+//         name: 'AeroJet',
+//         fuelCapacity: 800,
+//         availableStaff: ['pilots', 'flightAttendants', 'engineers', 'medicalAssistance', 'sensorOperators'],
+//     },
+//     {
+//         name: 'SkyJet',
+//         fuelCapacity: 500,
+//         availableStaff: ['pilots', 'flightAttendants']
+//     }
+// ];
+
+// let flightRequirements = {
+//     requiredStaff: 4,
+// };
+
+// function meetsStaffRequirements(availableStaff, requiredStaff) {
+//     if (availableStaff.length >= requiredStaff) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// };
+
+// export { availableAirplanes, flightRequirements, meetsStaffRequirements };
+
+// >>>> 8/15
