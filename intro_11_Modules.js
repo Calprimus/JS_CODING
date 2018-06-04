@@ -207,25 +207,69 @@
 // };
 
 // >>>>10/15
-import { availableAirplanes, flightRequirements, meetsStaffRequirements, meetsSpeedRangeRequirements } from './airplane';
+// import { availableAirplanes, flightRequirements, meetsStaffRequirements, meetsSpeedRangeRequirements } from './airplane';
 
-function displayFuelCapacity() {
-    availableAirplanes.forEach(function(element) {
-        console.log('Fuel Capacity of ' + element['name'] + ': ' + element['fuelCapacity']);
-    });
-};
-displayFuelCapacity();
+// function displayFuelCapacity() {
+//     availableAirplanes.forEach(function(element) {
+//         console.log('Fuel Capacity of ' + element['name'] + ': ' + element['fuelCapacity']);
+//     });
+// };
+// displayFuelCapacity();
 
-function displayStaffStatus() {
-    availableAirplanes.forEach(function(element) {
-        console.log(element.name + ' meets staff requirements: ' + meetsStaffRequirements(element.availableStaff, flightRequirements.requiredStaff));
-    });
-};
-displayStaffStatus();
+// function displayStaffStatus() {
+//     availableAirplanes.forEach(function(element) {
+//         console.log(element.name + ' meets staff requirements: ' + meetsStaffRequirements(element.availableStaff, flightRequirements.requiredStaff));
+//     });
+// };
+// displayStaffStatus();
 
-function displaySpeedRangeStatus() {
-    availableAirplanes.forEach(function(element) {
-        console.log(element.name + ' meets speed range requirements: ' + meetsSpeedRangeRequirements(element.maxSpeed, element.minSpeed, flightRequirements.requiredSpeedRange));
-    });
-};
-displaySpeedRangeStatus()
+// function displaySpeedRangeStatus() {
+//     availableAirplanes.forEach(function(element) {
+//         console.log(element.name + ' meets speed range requirements: ' + meetsSpeedRangeRequirements(element.maxSpeed, element.minSpeed, flightRequirements.requiredSpeedRange));
+//     });
+// };
+// displaySpeedRangeStatus()
+
+// >>>> 11/15
+// ---------> airplane.js file
+// let availableAirplanes = [{
+//         name: 'AeroJet',
+//         fuelCapacity: 800,
+//         maxSpeed: 1200,
+//         minSpeed: 300,
+//         availableStaff: ['pilots', 'flightAttendants', 'engineers', 'medicalAssistance', 'sensorOperators'],
+//     },
+//     {
+//         name: 'SkyJet',
+//         fuelCapacity: 500,
+//         maxSpeed: 800,
+//         minSpeed: 200,
+//         availableStaff: ['pilots', 'flightAttendants']
+//     }
+// ];
+
+// let flightRequirements = {
+//     requiredStaff: 4,
+//     requiredSpeedRange: 700
+// };
+
+// function meetsStaffRequirements(availableStaff, requiredStaff) {
+//     if (availableStaff.length >= requiredStaff) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// };
+
+// function meetsSpeedRangeRequirements(maxSpeed, minSpeed, requiredSpeedRange) {
+//     let range = maxSpeed - minSpeed;
+//     if (range > requiredSpeedRange) {
+//         return true;
+//     } else {
+//         return false
+//     }
+// };
+
+// export { availableAirplanes as aircrafts, flightRequirements as flightReqs, meetsStaffRequirements as meetsStaffReqs, meetsSpeedRangeRequirements as meetsSpeedRangeReqs };
+
+// >>>>12/15
