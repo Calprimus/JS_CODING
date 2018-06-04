@@ -369,3 +369,22 @@
 // displaySpeedRangeStatus()
 
 // >>>> 15/15
+// INTERMEDIATE JAVASCRIPT MODULES
+// Review
+
+// Modules in JavaScript are reusable pieces of code 
+// that can be exported from one program and imported for use in another program.
+
+// 1. module.exports _exports the module for use in another program.
+
+// 2. require() imports the module for use in the current program.
+
+// ES6 introduced a more flexible, easier syntax to export modules:
+
+// A) default exports use export default to export JavaScript objects, functions, and primitive data types.
+
+// B) named exports use the export keyword to export data in variables.
+
+// C) named exports can be aliased with the as keyword.
+
+// D) import is a keyword that imports any object, function, or data type.
