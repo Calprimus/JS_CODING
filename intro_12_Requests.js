@@ -60,3 +60,6 @@ setTimeout(() => {
 console.log('Second message!');
 
 // >>>> 3/10
+// -----------> see image in XHR.md file
+
+// >>>> 4/10
