@@ -53,13 +53,28 @@
 // jsonButton.addEventListener('click', generateJson);
 
 // >>>> 2/10
-console.log('First message!');
-setTimeout(() => {
-    console.log('This message will always run last...');
-}, 0);
-console.log('Second message!');
+// console.log('First message!');
+// setTimeout(() => {
+//     console.log('This message will always run last...');
+// }, 0);
+// console.log('Second message!');
 
 // >>>> 3/10
 // -----------> see image in XHR.md file
 
 // >>>> 4/10
+// const xhr = new XMLHttpRequest;
+// const url = 'https://api-to-call.com/endpoint';
+
+// xhr.responseType = 'json';
+
+// xhr.onreadystatechange = () => {
+//     if (xhr.readyState === XMLHttpRequest.DONE) {
+//         return xhr.response;
+//     }
+// };
+
+// xhr.open('GET', url);
+// xhr.send();
+
+// >>>> 5/10
