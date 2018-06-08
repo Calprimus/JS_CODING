@@ -177,41 +177,157 @@
 
 // >>>> 9/10
 // Information to reach API
-const apiKey = '9299153837f044968a04e1cf984eb50b';
-const url = 'https://api.rebrandly.com/v1/links';
+// const apiKey = '9299153837f044968a04e1cf984eb50b';
+// const url = 'https://api.rebrandly.com/v1/links';
 
-// Some page elements
-const inputField = document.querySelector('#input');
-const shortenButton = document.querySelector('#shorten');
-const responseField = document.querySelector('#responseField');
+// // Some page elements
+// const inputField = document.querySelector('#input');
+// const shortenButton = document.querySelector('#shorten');
+// const responseField = document.querySelector('#responseField');
 
-// AJAX functions
-const shortenUrl = () => {
-  const urlToShorten = inputField.value;
-  const data = JSON.stringify({destination: urlToShorten});
-  const xhr = new XMLHttpRequest;
-  xhr.responseType = 'json';
-  xhr.onreadystatechange = () => {
-    if (xhr.readyState === XMLHttpRequest.DONE) {
-  renderResponse(xhr.response);
-};
-  };
-  xhr.open('POST', url);
-  xhr.setRequestHeader('Content-type', 'application/json');
-	xhr.setRequestHeader('apikey', apiKey);
-  xhr.send(data);
-};
+// // AJAX functions
+// const shortenUrl = () => {
+//   const urlToShorten = inputField.value;
+//   const data = JSON.stringify({destination: urlToShorten});
+//   const xhr = new XMLHttpRequest;
+//   xhr.responseType = 'json';
+//   xhr.onreadystatechange = () => {
+//     if (xhr.readyState === XMLHttpRequest.DONE) {
+//   renderResponse(xhr.response);
+// };
+//   };
+//   xhr.open('POST', url);
+//   xhr.setRequestHeader('Content-type', 'application/json');
+// 	xhr.setRequestHeader('apikey', apiKey);
+//   xhr.send(data);
+// };
 
 
-// Clear page and call AJAX functions
-const displayShortUrl = (event) => {
-  event.preventDefault();
-  while(responseField.firstChild){
-    responseField.removeChild(responseField.firstChild);
-  }
-  shortenUrl();
-}
+// // Clear page and call AJAX functions
+// const displayShortUrl = (event) => {
+//   event.preventDefault();
+//   while(responseField.firstChild){
+//     responseField.removeChild(responseField.firstChild);
+//   }
+//   shortenUrl();
+// }
 
-shortenButton.addEventListener('click', displayShortUrl);
+// shortenButton.addEventListener('click', displayShortUrl);
 
 // >>>> 10/10
+// REQUESTS I
+// Review Requests I
+// You’ve done an amazing job navigating through making XHR GET and POST requests! 
+// Take some time to review the core concepts before moving on to the next lesson.
+
+// 1. JavaScript is the language of the web because of its asynchronous capabilities. 
+// AJAX, which stands for Asynchronous JavaScript and XML, 
+// is a set of tools that are used together to take advantage of JavaScript's asynchronous capabilities.
+
+// 2. There are many HTTP request methods, two of which are GET and POST.
+
+// 3. GET requests only request information from other sources.
+
+// 4. POST methods can introduce new information to other sources in addition to requesting it.
+
+// 5. GET requests can be written using an XMLHttpRequest object and vanilla JavaScript.
+
+// 6. POST requests can also be written using an XMLHttpRequest object and vanilla JavaScript.
+// // --------------------------------------------------------------------------------------
+// 7. Writing GET and POST requests with XHR objects and vanilla JavaScript requires:
+
+// const xhr = new XMLHttpRequest();     // - constructing the XHR object using new, 
+// xhr.responseType = 'json';            //- setting the responseType, 
+
+// xhr.onreadystatechange = () => {      //- creating a function that will handle the response object, 
+//   if (xhr.readyState === XMLHttpRequest.DONE) {
+//     renderWordResponse(xhr.response);
+//   }
+// };
+// xhr.open('GET', endPoint);            //- and opening and sending the request.
+// xhr.send();
+// }
+// // ----------------------------------------------------------------------------------------
+// 8. To add a query string to a URL endpoint you can use ? and include a parameter.
+
+// 9. To provide additional parameters, use & and then include a key-value pair, joined by =.
+
+// 10. Determining how to correctly write the requests and how to properly implement them 
+// requires carefully reading the documentation of the API with which you're working.
+
+// // NOTE: wordSmith functions from lines 4 - 39
+// // NOTE: byteSize functions from lines 41 - 76 (remember to add your API key!)
+
+// // information to reach API
+// const dataMuseUrl = 'https://api.datamuse.com/words?';
+// const queryParams = 'rel_jjb=';
+
+// // selecting page elements
+// const inputField = document.querySelector('#input');
+// const submit = document.querySelector('#submit');
+// const responseField = document.querySelector('#responseField');
+
+// // AJAX function
+// const getSuggestions = () => {
+//   const wordQuery = inputField.value;
+//   const endPoint = dataMuseUrl + queryParams + wordQuery;
+
+//   const xhr = new XMLHttpRequest();
+//   xhr.responseType = 'json';
+
+//   xhr.onreadystatechange = () => {
+//     if (xhr.readyState === XMLHttpRequest.DONE) {
+//       renderWordResponse(xhr.response);
+//     }
+//   };
+//   xhr.open('GET', endPoint);
+//   xhr.send();
+// }
+
+// // clear previous results and display results to webpage
+// const displaySuggestions = (event) => {
+//   event.preventDefault();
+//   while(responseField.firstChild){
+//     responseField.removeChild(responseField.firstChild);
+//   };
+//   getSuggestions();
+// };
+
+// submit.addEventListener('click', displaySuggestions);
+
+// // information to reach Rebrandly API
+// const apiKey = '<Your API Key>';
+// const rebrandlyUrl = 'https://api.rebrandly.com/v1/links';
+
+// // element selector
+// const shortenButton = document.querySelector('#shorten');
+
+// // AJAX functions
+// const shortenUrl = () => {
+//   const urlToShorten = inputField.value;
+//   const data = JSON.stringify({destination: urlToShorten});
+
+//   const xhr = new XMLHttpRequest();
+//   xhr.responseType = 'json';
+
+//   xhr.onreadystatechange = () => {
+//     if (xhr.readyState === XMLHttpRequest.DONE) {
+//       renderByteResponse(xhr.response);
+//     }
+//   };
+//   xhr.open('POST', rebrandlyUrl);
+//   xhr.setRequestHeader('Content-type', 'application/json');
+// 	xhr.setRequestHeader('apikey', apiKey);
+//   xhr.send(data);
+// }
+
+// // Clear page and call AJAX functions
+// const displayShortUrl = (event) => {
+//   event.preventDefault();
+//   while(responseField.firstChild){
+//     responseField.removeChild(responseField.firstChild);
+//   };
+//   shortenUrl();
+// };
+
+// shortenButton.addEventListener('click', displayShortUrl);
