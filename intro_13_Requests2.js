@@ -307,3 +307,18 @@
 // Notice the new keywords async and await, as well as the "try" and "catch" statements.
 
 // >>>> 12/17
+// const getData = async() => {
+//     try {
+//         await fetch('https://api-to-call.com/endpoint');
+//         const response = await fetch('https://api-to-call.com/endpoint');
+//         if (response.ok) {
+//             const jsonResponse = await response.json();
+//             return jsonResponse;
+//         }
+//         throw new Error('Request failed!')
+//     } catch (error) {
+//         console.log(error)
+//     }
+// };
+
+// >>>> 13/17
