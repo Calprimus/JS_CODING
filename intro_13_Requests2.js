@@ -299,3 +299,11 @@
 // shortenButton.addEventListener('click', displayShortUrl);
 
 // >>>> 11/17
+// In the following exercises, we’ re going to take what you’ ve learned about chaining Promises
+// and make it simpler using functionality introduced in ES8: async and await.
+
+
+// The structure for this request will also be slightly different.
+// Notice the new keywords async and await, as well as the "try" and "catch" statements.
+
+// >>>> 12/17
