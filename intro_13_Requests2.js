@@ -361,22 +361,79 @@
 // submit.addEventListener('click', displaySuggestions);
 
 // >>>> 14/17
+// async POST Requests I
+// Now that you’ve made an async GET request, 
+// let’s start on getting you familiar the async POST request.
+
+// As with the other GET and POST requests that you’ve been making, 
+// an async POST request requires more information. Take a look at the diagram.
+
+// We still have the same structure of using try and catch as before. 
+// But, in the fetch() call, we now have to include an additional argument 
+// that contains more information like method and body.
 
 // >>>> 15/17
-const getData = async() => {
-    try {
-        const response = await fetch('https://api-to-call.com/endpoint', {
-            method: 'POST',
-            body: JSON.stringify({ id: 200 })
-        });
-        if (response.ok) {
-            const jsonResponse = await response.json();
-            return jsonResponse;
-        }
-        throw new Error('Request failed!');
-    } catch (error) {
-        console.log(error)
-    }
-};
+// const getData = async() => {
+//     try {
+//         const response = await fetch('https://api-to-call.com/endpoint', {
+//             method: 'POST',
+//             body: JSON.stringify({ id: 200 })
+//         });
+//         if (response.ok) {
+//             const jsonResponse = await response.json();
+//             return jsonResponse;
+//         }
+//         throw new Error('Request failed!');
+//     } catch (error) {
+//         console.log(error)
+//     }
+// };
 
 // >>>> 16/17
+// // information to reach API
+// const apiKey = '9299153837f044968a04e1cf984eb50b';
+// const url = 'https://api.rebrandly.com/v1/links';
+
+// // Some page elements
+// const inputField = document.querySelector('#input');
+// const shortenButton = document.querySelector('#shorten');
+// const responseField = document.querySelector('#responseField');
+
+// // AJAX functions
+// // Code goes here
+
+// const shortenUrl = async() => {
+//     const urlToShorten = inputField.value;
+//     const data = JSON.stringify({ destination: urlToShorten })
+
+
+//     try {
+//         const response = await fetch(url, {
+//             method: 'POST',
+//             body: data,
+//             headers: {
+//                 'Content-type': 'application/json',
+//                 'apikey': apiKey
+//             }
+//         })
+//         if (response.ok) {
+//             const jsonResponse = await response.json()
+//             renderResponse(jsonResponse)
+//         }
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }
+
+// // Clear page and call AJAX functions
+// const displayShortUrl = (event) => {
+//     event.preventDefault();
+//     while (responseField.firstChild) {
+//         responseField.removeChild(responseField.firstChild);
+//     }
+//     shortenUrl();
+// }
+
+// shortenButton.addEventListener('click', displayShortUrl);
+
+// >>>> 17/17
