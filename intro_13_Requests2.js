@@ -61,3 +61,13 @@
 //   which contains the status of the promise with information the API sent back.
 
 //   >>>> 3/17
+fetch('https://api-to-call.com/endpoint').then(response => {
+    if (response.ok) {
+        return response.json();
+    }
+    throw new Error('Request failed!');
+}, networkError => {
+    console.log(networkError.message)
+}).then(jsonResponse => {
+    return jsonResponse;
+})
