@@ -148,3 +148,15 @@
 // submit.addEventListener('click', displaySuggestions);
 
 // >>>> 6/17
+// fetch() POST Requests I
+
+// Take a look at the diagram. 
+// It has the boilerplate code for a POST request using fetch().
+
+// Notice that the initial call takes two arguments: 
+// - an endpoint 
+// - and an object that contains information needed for the POST request. 
+
+// The rest of the request is identical to the GET request.
+
+// >>>> 7/17
